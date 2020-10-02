@@ -34,7 +34,7 @@ $(function(){
 
 	$('.filter__item-drop').on('click', function(){
 		$(this).toggleClass('filter__item-drop--active');
-		$(this).next().slideToggle();
+		$(this).next().slideToggle('200');
 	});
 
 	});
