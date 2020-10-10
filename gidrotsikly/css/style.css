@@ -447,6 +447,11 @@ li.slick-active button {
 .product-item__wrapper {
 	position: relative;
 	width: 271px;
+	transition: all .3s;
+}
+
+.product-item__wrapper.product-item__wrapper--list {
+	width: 100%;
 }
 
 .product-item {
@@ -454,13 +459,16 @@ li.slick-active button {
 	border-radius: 3px;
 	text-align: center;
 	padding: 52px 20px 31px;
-	transition: all, .3;
+	transition: all .3s;
 	min-height: 400px;
+	width: 100%;
 }
 
 .product-item-title {
 	font-weight: normal;
 	padding: 14px 0 25px;
+	font-size: 18px;
+	line-height: 21px;
 }
 
 .product-item__favorite {
@@ -819,17 +827,36 @@ color: #1C62CD;
 	margin-left: 10px;
 }
 
+.catalog__filter-btn {
+	display: flex;
+	align-items: center;
+}
+
 button.catalog__filter-btngrid {
 	width: 26px;
 	height: 21px;
 }
 
 button.catalog__filter-btnline {
-	
+	width: 25px;
+	height: 19px;
+}
+
+.catalog__filter-button {
+	opacity: 0.3;
+	outline: none;
+}
+
+.catalog__filter-button--active {
+	opacity: 1;
 }
 
 .select-item {
-	
+	border: 1px solid #D7D9DF;	
+	font-size: 14px;
+	line-height: 17px;
+	margin-right: 34px;
+	padding: 7px 10px 7px 20px;
 }
 
 .catalog__inner {
@@ -1299,10 +1326,59 @@ button.catalog__filter-btnline {
 	color: #C4C4C4;
 }
 
-.catalog__filter-btngrid {
-	
+.product-card {
+	margin-bottom: 80px;
 }
 
-.catalog__filter-btn {
+.product-card__inner {
+	display: flex;
+	justify-content: space-between;
+}
 
+.product-card__img-box {
+	font-family: 'Barlow', sans-serif;
+	width: 500px;
+	text-align: center;
+	padding-top: 64px;
+	position: relative;
+}
+
+.product-card__img-box::before {
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.12em;
+	padding: 13px 25px;
+	border-radius: 3px;
+}
+
+.product-card__price-old {
+	display: inline-block;
+	font-size: 44px;
+	line-height: 36px;
+	color: #2F3035;
+	opacity: 0.6;
+	margin-bottom: 0;
+	background-image: url(../images/old-price-line.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.product-card__price-new {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 48px;
+	color: #2F3035;
+	margin-bottom: 17px;
+}
+
+
+.product-card__content {
+	width: 570px;
+}
+
+.product-card__link {
+	font-size: 15px;
+	line-height: 18px;
+	color: #1C62CD;
+	border-bottom: 1px solid #1C62CD;
 }
