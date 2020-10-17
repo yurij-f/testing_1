@@ -86,6 +86,13 @@ body {
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 	transform: translateX(-100%);
 	transition: all .3s;
+	position: absolute;
+	z-index: 10;
+	background-color: #fff;
+}
+
+.menu__mobile-linewrapper {
+	display: none;
 }
 
 .menu-mobile__list--active {
@@ -249,6 +256,11 @@ body {
 	border: 1px solid #fff;
 	border-radius: 50%;
 	background-color: transparent;
+}
+
+.slick-dots .slick-active  button {
+	background-color: #fff;
+	outline: none;
 }
 
 li.slick-active button {
@@ -1605,4 +1617,17 @@ button.catalog__filter-btnline {
 	background-color: #1C62CD;
 	border: none;
 	border-radius: 3px;
+}
+
+.product-slider .slick-dots {
+	bottom: -30px;
+}
+
+.product-slider .slick-dots button {
+	background-color: #C4C4C4;
+}
+
+.product-slider .slick-dots .slick-active button {
+	background-color: #1C62CD;
+	outline: none;
 }
