@@ -23,6 +23,11 @@
 			<div class="container">
 				<div class="header__top-inner">
 					<nav class="menu">
+						<button class="menu__btn">
+							<div class="menu__btn-line"></div>
+							<div class="menu__btn-line"></div>
+							<div class="menu__btn-line"></div>
+						</button>
 						<ul class="menu__list">
 							<li class="menu__item">
 								<a class="menu__link" href="#">
@@ -70,6 +75,112 @@
 				</div>
 			</div>
 		</div>
+
+		<ul class="menu-mobile__list">
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/user.svg" alt="">
+					<p>Войти</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/user.svg" alt="">
+					<p>Регистрация</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/heart.svg" alt="">
+					<p>Избранное</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/basket.svg" alt="">
+					<p>Корзина</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/house.svg" alt="">
+					<p>Магазины</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/procent.svg" alt="">
+					<p>Акции</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/box.svg" alt="">
+					<p>Доставка и оплата</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<p>Квадроциклы</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<p>Катера</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<p>Гидроциклы</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<p>Лодки</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<p>Вездеходы</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<p>Снегоходы</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<p>Двигатели</p>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a  class="menu-mobile__link" href="#">
+					<p>Запчасти</p>
+				</a>
+			</li>
+		</ul>
+
+		<div class="menu__mobile-linewrapper">
+			<ul class="menu__mobile-line">
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						Магазины	
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						Акции
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						Доставка и оплата
+					</a>
+				</li>
+			</ul>
+		</div>
+
 		<div class="header__bottom">
 			<div class="container">
 					<ul class="menu-categories">
@@ -120,23 +231,25 @@
 
 	<div class="breadcrumbs">
 		<div class="container">
-			<ul class="breadcrumbs__list">
-				<li class="breadcrumbs__list-item">
-					<a href="#">
-						Главная	
-					</a>
-				</li>
-				<li class="breadcrumbs__list-item">
-					<a href="#">
-						Гидроциклы	
-					</a>
-				</li>
-				<li class="breadcrumbs__list-item">
-					<span href="#">
-						Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic	
-					</span>
-				</li>
-			</ul>
+			<div class="breadcrumbs__inner">
+				<ul class="breadcrumbs__list mobile-overflow">
+					<li class="breadcrumbs__list-item">
+						<a href="#">
+							Главная	
+						</a>
+					</li>
+					<li class="breadcrumbs__list-item">
+						<a href="#">
+							Гидроциклы	
+						</a>
+					</li>
+					<li class="breadcrumbs__list-item">
+						<a href="#">
+							Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic	
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	
@@ -148,6 +261,9 @@
 					<p class="product-card__price-old">1 200 475 ₽</p>
 					<p class="product-card__price-new">1 100 475 ₽</p>
 					<a class="product-card__link" href="#">Нашли дешевле? Снизим цену!</a>
+					<div class="product-card__btn product-card__btn-mobile">
+						<button>купить</button>
+					</div>
 				</div>
 				<div class="product-card__content">
 					<h1 class="product-card__title">
@@ -235,7 +351,7 @@
 	
 	<section class="card__tabs">
 		<div class="container">
-			<div class="tabs-wrapper">
+			<div class="tabs-wrapper tabs-wrapper--no-scroll">
 				<div class="tabs card__tab-box">
 					<a class="tab card__tab" href="#product-card__tabs-1">
 						О товаре	
@@ -775,7 +891,7 @@
 				<div class="footer__top-inner">
 					<div class="footer__top-item footer__top-newslatter">
 						<h6 class="footer__top-title">
-							подпишитесь на нашу рассылку 
+							Подпишитесь на нашу рассылку 
 							и узнавайте о акциях быстрее
 						</h6>
 						<form class="footer-form" action="">
@@ -783,8 +899,8 @@
 							<button class="footer-form__btn" type="submit">Отправить</button>
 						</form>
 					</div>
-					<div class="footer__top-item">
-						<h6 class="footer__top-title">
+					<div class="footer__top-item footer__top-itemdrop">
+						<h6 class="footer__top-title footer__topdrop">
 						Информация
 						</h6>
 						<ul class="footer-list">
@@ -795,7 +911,7 @@
 						</ul>
 					</div>
 					<div class="footer__top-item">
-						<h6 class="footer__top-title">
+						<h6 class="footer__top-title footer__topdrop">
 							Интернет-магазин
 						</h6>
 						<ul class="footer-list">

@@ -297,6 +297,10 @@ li.slick-active button {
 	text-align: right;
 }
 
+.aside__btn {
+	display: none;
+}
+
 .price {
 	font-family: 'Barlow', sans-serif;
 	position: relative;
@@ -1630,4 +1634,8 @@ button.catalog__filter-btnline {
 .product-slider .slick-dots .slick-active button {
 	background-color: #1C62CD;
 	outline: none;
+}
+
+.product-card__btn-mobile {
+	display: none;
 }
